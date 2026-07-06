@@ -50,7 +50,7 @@
         <script>
         var map = L.map('map', {
             zoomControl:false, maxZoom:21, minZoom:15
-        }).fitBounds([[44.65905095258649,-63.55960158731553],[44.6633913947503,-63.55483730190184]]);
+        }).fitBounds([[44.660724824443975,-63.5584638597808],[44.662895046506854,-63.55608169079372]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/qgis2web/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -610,8 +610,52 @@
                         <td colspan="2">' + (feature.properties['ID'] !== null ? autolinker.link(String(feature.properties['ID']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">Available Power</th>\
-                        <td class="visible-with-data" id="Available Power">' + (feature.properties['Available Power'] !== null ? autolinker.link(String(feature.properties['Available Power']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">15A 120V</th>\
+                        <td class="visible-with-data" id="15A 120V">' + (feature.properties['15A 120V'] !== null ? autolinker.link(String(feature.properties['15A 120V']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">50A 120/240V</th>\
+                        <td class="visible-with-data" id="50A 120/240V">' + (feature.properties['50A 120/240V'] !== null ? autolinker.link(String(feature.properties['50A 120/240V']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">225A, 120/240V</th>\
+                        <td class="visible-with-data" id="225A, 120/240V">' + (feature.properties['225A, 120/240V'] !== null ? autolinker.link(String(feature.properties['225A, 120/240V']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">100A, 120/208V</th>\
+                        <td class="visible-with-data" id="100A, 120/208V">' + (feature.properties['100A, 120/208V'] !== null ? autolinker.link(String(feature.properties['100A, 120/208V']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">100A, 250/600V TwistLock</th>\
+                        <td class="visible-with-data" id="100A, 250/600V TwistLock">' + (feature.properties['100A, 250/600V TwistLock'] !== null ? autolinker.link(String(feature.properties['100A, 250/600V TwistLock']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">200A, 480V Box</th>\
+                        <td class="visible-with-data" id="200A, 480V Box">' + (feature.properties['200A, 480V Box'] !== null ? autolinker.link(String(feature.properties['200A, 480V Box']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">400A, 120/208V</th>\
+                        <td class="visible-with-data" id="400A, 120/208V">' + (feature.properties['400A, 120/208V'] !== null ? autolinker.link(String(feature.properties['400A, 120/208V']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">30A, 120/208V</th>\
+                        <td class="visible-with-data" id="30A, 120/208V">' + (feature.properties['30A, 120/208V'] !== null ? autolinker.link(String(feature.properties['30A, 120/208V']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">50A, 120/208V</th>\
+                        <td class="visible-with-data" id="50A, 120/208V">' + (feature.properties['50A, 120/208V'] !== null ? autolinker.link(String(feature.properties['50A, 120/208V']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">30A, 120/240V</th>\
+                        <td class="visible-with-data" id="30A, 120/240V">' + (feature.properties['30A, 120/240V'] !== null ? autolinker.link(String(feature.properties['30A, 120/240V']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">200A, 600V Twistlock</th>\
+                        <td class="visible-with-data" id="200A, 600V Twistlock">' + (feature.properties['200A, 600V Twistlock'] !== null ? autolinker.link(String(feature.properties['200A, 600V Twistlock']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">200A. 600V Box</th>\
+                        <td class="visible-with-data" id="200A. 600V Box">' + (feature.properties['200A. 600V Box'] !== null ? autolinker.link(String(feature.properties['200A. 600V Box']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
